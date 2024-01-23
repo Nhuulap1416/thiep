@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="letter" onclick="display_letter()">
+		<div class="page increment" id="base">
+			<div class="arrow-down"></div>
+			<div id="name">Gửi Bé Mộng Cute🍓</div>
+			<div id="content">Hello vợ vợ,
+				 Năm nay là 1 năm ko vui thật sự là như vậy chúng ta ở bên nhau có thể nói là gần hết 1 năm nay nhưng tiếc là chúng ta tạm xa cách vì 1 số lý do, năm qua anh làm em vui thì ít mà buồn thì nhiều thậm chí anh đã làm em khóc rất nhiều...Tiếc là năm nay anh ko đón giao thừa cùng em. Có thể em đã bt rồi nhưng mà tết năm nay rất đặc biệt, đặc biệt ở chỗ là năm nay có ngày 30 và tới 10 năm nữa mới lại có 30 tết nữa và hy vọng rằng là 10 năm nữa người đón giao thừa cùng em là anh(L), và người em gọi là chồng vẫn là anh(L)❤️🍓💏(Note: anh(L)--> anh Lập). Cuối lời anh xin chúc em và gia đình em có 1 năm mới an khang thịnh vượng, dồi dào sức khỏe, tiền vô như nước...🥰😘🎉🍬🎊🎇 Chúc em ngày càng xinh đẹp, ngày càng cute, ngày càng học giỏi và thành công trên con đường mình chọn nheee🎇🎆🎊🎆🎉🍓❤️💕🍒🥰🎁🎉🍬. HAPPY NEW YEAR 2024🎇🎉🎆🎁🎉.Sa rang hê vợ vợ siu nhân siu siu cute❤️🍓🥰😘.
+				 Ik wacht nog steeds tot je terugkomt🥰
+			</div>
+		</div>
+	</div>
+	<style>
+		:root {
+		--size-div: 3;
+		--page-width: 200px;
+		--page-height: 100px;
+	}
+	body {
+		margin: 0 0;
+		background: pink;
+		font-family: "Dancing  Script", cursive;
+		font-size: calc(8.3px * var(--size-div));
+	}
+	.letter {
+		display: grid;
+		place-items: center;
+		width: 100%;
+		position: absolute;
+		height: 100%;
+		vertical-align: middle;
+		justify-content: center;
+	}
+	.increment:hover {
+		--size-div: 3.1;
+	}
+	
+	.letter .page {
+		background: rgb(255, 237, 237);
+		width: calc(var(--page-width) * var(--size-div));
+		height: calc(var(--page-height) * var(--size-div));
+		margin: auto;
+		border-radius: calc(3.3px * var(--size-div));
+		box-shadow: calc(1.3px * --size-div) calc(2.3px * var(--size-div)) #888888;
+	}
+	
+	.arrow-down {
+		width: 0;
+		height: 0;
+		border-left: calc(100px * var(--size-div)) solid transparent;
+		border-right: calc(100px * var(--size-div)) solid transparent;
+		border-radius: calc(3.3px * var(--size-div));
+		border-top: calc(60px * var(--size-div)) solid #ffd4fa;
+	}
+	
+	#content {
+		display: none;
+		text-align: left;
+		font-size: calc(7.8px * var(--size-div));
+		margin: 10px 10px;
+	}
+	#name {
+		padding: calc(26px * var(--size-div)) calc(7px * 3);
+		user-select: none;
+	}
+	
+	</style>
+	<script src="./main.js"></script>
+</body>
+</html>
